@@ -1,7 +1,7 @@
 {
   "locals": {
     "url": "http://localhost:8080",
-    "name": "Co create Change",
+    "name": "Co-create Change",
     "owner": "Nivedita Singh",
     "description": "Changing the way we change",
     "logo":"./img/logo.png",

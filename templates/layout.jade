@@ -24,6 +24,18 @@ html(lang='en')
       link(rel='stylesheet', href=contents.css['main.css'].url)
       block top_scripts
   body(class=bodyclass)
+    div.menu-bar
+      div.logo(style="background-image: url(#{locals.logo})")
+      ul.menu
+        li About
+          ul.sub-menu
+            li Mission
+            li Vision
+        li Services
+        li Training
+        li Partners  
+        li Jobs
+        li Contact Us
     block header
     block beforeContent
 
