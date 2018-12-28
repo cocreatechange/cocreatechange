@@ -1,0 +1,41 @@
+
+body{
+      height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.h1-container {
+    background-color: #000;
+    font-size: 1.4em;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 750px;
+    position: absolute;
+    top: 150px;
+    left: 25%;
+    width: calc(50%-375px);
+}
+.featured-image {
+    background-repeat: no-repeat;
+    padding: 0;
+    /*background-color: red;*/
+    height: 100%;
+    background-position: top;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Nusaliver;
+}
+.h1-container > h2 {
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.h1-container > h2::before, .h1-container > h2::after {
+  content: ""
+  margin: 0 9px;
+}
+footer{display: none}

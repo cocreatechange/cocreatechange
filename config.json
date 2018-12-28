@@ -1,0 +1,29 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Co create Change",
+    "owner": "Nivedita Singh",
+    "description": "Changing the way we change",
+    "logo":"./img/logo.png",
+    "featured_image":"./img/featured_img.png"
+ 
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
