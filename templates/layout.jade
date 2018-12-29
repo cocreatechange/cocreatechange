@@ -27,7 +27,8 @@ html(lang='en')
     div.menu-bar
       div.logo(style="background-image: url(#{locals.logo})")
       ul.menu
-        li About
+        li 
+          a(href = locals.url+'/about') About
           ul.sub-menu
             li Mission
             li Vision
@@ -51,3 +52,4 @@ html(lang='en')
             p &copy; #{ new Date().getFullYear() } #{ locals.owner } 
               //- please leave the "powered by" if you use the design
     block bottom_scripts
+
