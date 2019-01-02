@@ -19,37 +19,42 @@ html(lang='en')
         block title
           = locals.name
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
-
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       link(href="https://fonts.googleapis.com/css?family=Montserrat", rel="stylesheet")
       link(rel='stylesheet', href=contents.css['main.css'].url)
       block top_scripts
   body(class=bodyclass)
-    div.menu-bar
-      div.logo(style="background-image: url(#{locals.logo})")
-      ul.menu
-        li 
-          a(href = locals.url+'/about') About
-          ul.sub-menu
-            li Mission
-            li Vision
-        li Services
-        li Training
-        li Partners  
-        li Jobs
-        li Contact Us
+    header
+      div.menu-bar
+        div.logo(style="background-image: url(#{locals.logo})")
+        ul.menu
+          li 
+            a(href = locals.url+'/about.html') About
+            ul.sub-menu
+              li Mission
+              li Vision
+          li Services
+          li Training
+          li Partners  
+          li Jobs
+          li Contact Us
     block header
     block beforeContent
 
 
     div.container
         block content
+    block aftercontent
           
     footer
-      div.container
+      div
         block footer
-          
+          "Footer area"
           section.copy
-            p &copy; #{ new Date().getFullYear() } #{ locals.owner } 
+           // p &copy; #{ new Date().getFullYear() } #{ locals.owner } 
               //- please leave the "powered by" if you use the design
     block bottom_scripts
+
+
+
 

@@ -6,6 +6,7 @@ module.exports = (env, callback) ->
   defaults =
     template: 'index.jade' # template that renders pages
     articles: 'articles' # directory containing contents to paginate
+    profiles: 'profiles' # directory containing contents to paginate
     first: 'index.html' # filename/url for first page
     filename: 'page/%d/index.html' # filename for rest of pages
     perPage: 2 # number of articles per page
@@ -23,6 +24,20 @@ module.exports = (env, callback) ->
     articles = articles.filter (item) -> item.template isnt 'none'
     # sort article by date
     articles.sort (a, b) -> b.date - a.date
+    return articles
+  
+  getProfilesArticles = (contents) ->
+    console.log "sssssssssssssssssssss"
+    # helper that returns a list of articles found in *contents*
+    # note that each article is assumed to have its own directory in the articles directory
+    articles = contents[options.profiles]._.directories.map (item) -> item.index
+    # skip articles that does not have a template associated
+    articles = articles.filter (item) -> item.template isnt 'none' and 
+    # sort article by date
+  
+    for a in articles
+      console.log a.metadata
+    articles.sort (a, b) -> a.metadata.order.toString() - b.metadata.order.toString()
     return articles
 
   class PaginatorPage extends env.plugins.Page
@@ -60,7 +75,6 @@ module.exports = (env, callback) ->
 
     # find all articles
     articles = getArticles contents
-
     # populate pages
     numPages = Math.ceil articles.length / options.perPage
     pages = []
@@ -82,10 +96,12 @@ module.exports = (env, callback) ->
     rv['last.page'] = pages[(numPages-1)] # alias for last page
 
     # callback with the generated contents
+ 
     callback null, rv
 
   # add the article helper to the environment so we can use it later
   env.helpers.getArticles = getArticles
+  env.helpers.getProfilesArticles = getProfilesArticles
 
   # tell the plugin manager we are done
   callback()

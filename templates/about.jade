@@ -1,0 +1,44 @@
+
+extends layout
+
+block append vars
+  - bodyclass = 'about'
+
+block prepend title
+  | #{ page.title + ' - '}
+
+
+  
+block beforeContent
+
+  div(style="background-image:url('img/aboutus-img.jpg')",class='featured-image')
+    div.h1-container
+      h1 About Us
+
+
+block content   
+   section.content!= typogr(page.html).typogrify()
+   
+block aftercontent   
+   - var articles =  env.helpers.getProfilesArticles(contents)        
+   section#profiles
+      div.profiles
+        each a  in articles
+          article.card(data-name = a.metadata.name)
+            div.top-img(style= "background-image:url(img/" + a.metadata.id +".jpg)" )
+            h2 #{a.metadata.name}
+      div.details 
+        each a  in articles
+          div.profile(data-name = a.metadata.name)
+            != typogr(a.html).typogrify()
+      
+
+block bottom_scripts
+  script.
+      $('#profiles .card').click(function(){
+        $(this).siblings().removeClass('active')
+        $(this).addClass('active')
+        $('.details .profile').removeClass('active')
+        $('.details .profile[data-name="'+ $(this).data('name')+'"]').addClass('active')
+      })
+      $('#profiles .card').first().trigger('click')
