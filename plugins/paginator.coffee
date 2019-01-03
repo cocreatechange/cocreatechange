@@ -27,7 +27,6 @@ module.exports = (env, callback) ->
     return articles
   
   getProfilesArticles = (contents) ->
-    console.log "sssssssssssssssssssss"
     # helper that returns a list of articles found in *contents*
     # note that each article is assumed to have its own directory in the articles directory
     articles = contents[options.profiles]._.directories.map (item) -> item.index
@@ -36,9 +35,18 @@ module.exports = (env, callback) ->
     # sort article by date
   
     for a in articles
-      console.log a.metadata
+      console.log ''
+      # console.log a.metadata
     articles.sort (a, b) -> a.metadata.order.toString() - b.metadata.order.toString()
     return articles
+  getEventPosters = (contents) ->
+
+  
+    # helper that returns a list of articles found in *contents*
+    # note that each article is assumed to have its own directory in the articles directory
+    posters  = Object.keys contents.img.events
+    # skip articles that does not have a template associated
+    return posters
 
   class PaginatorPage extends env.plugins.Page
     ### A page has a number and a list of articles ###
@@ -102,6 +110,7 @@ module.exports = (env, callback) ->
   # add the article helper to the environment so we can use it later
   env.helpers.getArticles = getArticles
   env.helpers.getProfilesArticles = getProfilesArticles
+  env.helpers.getEventPosters = getEventPosters
 
   # tell the plugin manager we are done
   callback()

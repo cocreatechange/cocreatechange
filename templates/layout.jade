@@ -26,17 +26,21 @@ html(lang='en')
   body(class=bodyclass)
     header
       div.menu-bar
-        div.logo(style="background-image: url(#{locals.logo})")
+        a.logo(href = '/', style="background-image: url(#{locals.logo})")
         ul.menu
+          li
+            a(href='/') Home
           li 
             a(href = locals.url+'/about.html') About
             ul.sub-menu
-              li Mission
-              li Vision
-          li Services
-          li Training
-          li Partners  
-          li Jobs
+              li 
+                a(href = locals.url + '/about.html#mission') Mission
+              li 
+                a(href = locals.url + '/about.html#vision') Vision
+              li 
+                a(href = locals.url + '/about.html#partners') Partners
+          li   
+            a(href = locals.url + '/events.html') Events
           li Contact Us
     block header
     block beforeContent

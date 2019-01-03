@@ -1,0 +1,30 @@
+
+extends layout
+
+block append vars
+  - bodyclass = 'about'
+
+block prepend title
+  | #{ page.title + ' - '}
+
+
+
+
+block content   
+  - var articles =  env.helpers.getEventPosters(contents)
+  div.events
+    each a  in articles
+      object(data="img/events/"+a ,type="application/pdf")
+         
+block bottom_scripts
+  style.
+    .events {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    object {
+      height: 21em;
+      background: #fff;
+      flex: .8;
+    }

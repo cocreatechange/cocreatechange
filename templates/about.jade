@@ -21,7 +21,8 @@ block content
    
 block aftercontent   
    - var articles =  env.helpers.getProfilesArticles(contents)        
-   section#profiles
+   section#partners.profiles
+      h2.partners Partners
       div.profiles
         each a  in articles
           article.card(data-name = a.metadata.name)
@@ -35,10 +36,10 @@ block aftercontent
 
 block bottom_scripts
   script.
-      $('#profiles .card').click(function(){
+      $('#partners .card').click(function(){
         $(this).siblings().removeClass('active')
         $(this).addClass('active')
         $('.details .profile').removeClass('active')
         $('.details .profile[data-name="'+ $(this).data('name')+'"]').addClass('active')
       })
-      $('#profiles .card').first().trigger('click')
+      $('#partners .card').first().trigger('click')

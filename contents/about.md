@@ -8,11 +8,7 @@ featured-img: img/aboutus-img.jpg
 ---
 
 
-<section>
-
-
-</section>
-<section>
+<section id='vision'>
 ## VISION
 
 Throughout history there has been a deeply embedded conviction that under the right conditions people can help each other come to grips with problems and challenges in living.
@@ -36,8 +32,8 @@ As a first step towards actualizing this vision our mission is to build Counseli
 Thereafter, as a part of our overall vision we aspire to square the circle by building counseling, mentoring and problem solving skills in each and every individual in society.
 
 -----
-<section>
+<section id='mission'>
 ## MISSION
 
 Disseminating   mental   health   news   and   information,  destimatizing and challenging myths and stereotypes and promoting and delivering active directive therapy, with a focus on building accountability in the counseling profession.
- 
+
