@@ -1,0 +1,67 @@
+extends layout
+
+block append vars
+  - bodyclass = 'about'
+
+block prepend title
+  | #{ page.title + ' - '}
+
+
+
+block content
+  section.map
+    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.3121626937486!2d77.31125687533648!3d28.590410628500297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4f45a0340e5%3A0xaca60bd3f4037322!2sAspire+Labs!5e0!3m2!1sen!2sin!4v1546507905972", frameborder="0", style="border:0" allowfullscreen)
+
+  section.contact  
+    h1 #{page.title}
+    address #{page.metadata.address}
+    span.phone  
+      b Email:  
+      a(href="mailto:"+page.metadata.email) #{page.metadata.email}
+    span.phone  
+      b Phone: 
+      span  #{page.metadata.phone}
+    div.socials
+      each i in page.metadata.links
+        a.icon( class=i.key+"-icon", target='_blank', href = i.value)
+      
+
+block bottom_scripts
+  style.
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+    }
+    iframe{height:100%; width:100%;}
+    section{
+      flex:.45;
+    }
+    section.contact{
+      display:flex;
+      flex-direction:column;
+      justify-content: space-between;
+    }
+    address, span{ font-size: .9em; margin-bottom:1em; font}
+    address{  font-style:normal;  white-space: pre;}
+    h1 {
+      font-variant: small-caps;
+      font-size:1.5em !important;
+      margin: -15px 0 15px 0;
+    }
+    .socials{display:flex;}
+      .socials  .icon{
+      width:40px !important;
+      margin-left:5px;
+      font-size:.7em;
+      transition:  1s;
+      color: #545454;
+    }
+    .icon:hover{
+          transform: scale(1.5);
+      opacity:1;
+
+      color: #000;
+      }
+    b + *{ font-size: .8em;}
+

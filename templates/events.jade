@@ -1,8 +1,7 @@
 
 extends layout
 
-block append vars
-  - bodyclass = 'about'
+
 
 block prepend title
   | #{ page.title + ' - '}
@@ -13,18 +12,78 @@ block prepend title
 block content   
   - var articles =  env.helpers.getEventPosters(contents)
   div.events
+    span.left-arrow
+    span.right-arrow
+    -var i = 0
     each a  in articles
-      object(data="img/events/"+a ,type="application/pdf")
+      img(data-item = i, src="img/events/" +a)
+      -i++
          
 block bottom_scripts
   style.
     .events {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      position: relative;
+      justify-content: center;
+      height: 500px;
     }
-    object {
-      height: 21em;
-      background: #fff;
-      flex: .8;
+
+    .events > img {
+      display: none;
     }
+
+    .events > img.active {
+      display: block;
+      height:100%;
+      border:1px solid #ccc;
+    }
+
+    .events span {
+      position: absolute;
+      display: block;
+      height: 40px;
+      width: 40px;
+      top: 50%;
+      cursor: pointer;
+      opacity:.7;
+      background-image: url(img/arrows.png);
+      background-repeat: no-repeat;
+    }
+    .events span:hover {opacity:1}
+    span:active {
+      transform: scale(.8);
+      opacity: .5;
+    }
+    .events span.left-arrow {
+      left: 0;
+      background-position: center -36px;
+    }
+
+    .events span.right-arrow {
+      right: 0;
+      background-position: center 0;
+    }
+  script.
+    $('.events img').first().addClass('active');
+    $('.events span').click(function() {
+      var l = $('.events img').length;
+      var i = parseInt($(this).nextAll('img.active').data('item'));
+  
+      if ($(this).hasClass('left-arrow')) {
+        if (i == 0) i = l;
+        i--;
+        $('.events img').removeClass('active');
+        $('.events img[data-item = "' + i + '"]').addClass('active');
+       
+
+      }
+      else if($(this).hasClass('right-arrow')) {
+        if (i == l - 1) i = -1;
+        i++;
+        $('.events img').removeClass('active');
+        $('.events img[data-item = "' + i + '"]').addClass('active');
+
+      }
+
+
+    })
