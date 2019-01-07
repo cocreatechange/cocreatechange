@@ -4,6 +4,9 @@ title : Nivedita Singh
 template: profile.jade
 id: nivedita
 order: 2
+links:
+	- key: facebook 
+	  value: https://www.facebook.com/nivedita.singh.3114
 ---
 
 - Masters in Counseling Psychology AIBAS

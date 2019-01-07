@@ -28,6 +28,11 @@ block aftercontent
           article.card(data-name = a.metadata.name)
             div.top-img(style= "background-image:url(img/" + a.metadata.id +".jpg)" )
             h2 #{a.metadata.name}
+            if a.metadata.links
+              div.socials
+                each i in a.metadata.links
+                  a.icon( class=i.key+"-icon", target='_blank', href = i.value)
+
       div.details 
         each a  in articles
           div.profile(data-name = a.metadata.name)
@@ -43,3 +48,15 @@ block bottom_scripts
         $('.details .profile[data-name="'+ $(this).data('name')+'"]').addClass('active')
       })
       $('#partners .card').first().trigger('click')
+  style.
+    @media (max-width: 690px) {
+     article.card > .top-img{display:none;}
+      h2 {font-size:1em !important;}
+      section.profiles >h2{top:-32px !important}
+      #vision{margin-top: -8em !important;}
+    }
+    article h2 {margin-bottom:0;}
+    article .socials{
+    z-index:2;
+    cursor:pointer;
+    }
