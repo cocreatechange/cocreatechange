@@ -10,31 +10,60 @@ block prepend title
 
 
 block content   
-  - var articles =  env.helpers.getEventPosters(contents)
-  div.events
-    span.left-arrow
-    span.right-arrow
-    -var i = 0
-    each a  in articles
-      img(data-item = i, src="img/events/" +a)
-      -i++
-         
+  - var x = ['ongoing','upcoming','past']
+  - index=0
+  each eventtype in x
+    - var articles =  env.helpers.getEventPosters(contents,eventtype)
+    if articles.length > 0
+      h3(id=eventtype) 
+        | #{eventtype} Events
+      div.events(data-inx = index)
+        if articles.length > 2
+          span.left-arrow
+          span.right-arrow
+        -var i = 0
+        each a  in articles
+          img(data-item = i, src="img/events/"+eventtype+'/' +a)
+          -i++
+        -index++
+
 block bottom_scripts
   style.
+    body{padding-top:4em;}
+    @media (max-width:600px){
+      .events {
+        height:400px !important;
+      max-width:95%;
+        }
+    }
+    h3 {
+      font-variant: all-small-caps;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 2em;
+      margin-top: 0;
+      text-align: center;
+    }
     .events {
       display: flex;
       position: relative;
       justify-content: center;
-      height: 500px;
+    
+      margin:0 auto;
+        margin-top:2em !important;
+        
     }
 
     .events > img {
       display: none;
+      padding:10px;
+        background-color:#fff;
     }
 
     .events > img.active {
       display: block;
-      height:100%;
+
+      max-width:100%;
       border:1px solid #ccc;
     }
 
@@ -64,24 +93,26 @@ block bottom_scripts
       background-position: center 0;
     }
   script.
-    $('.events img').first().addClass('active');
+    $('.events').each(function(){$(this).children('img').first().addClass('active');})
     $('.events span').click(function() {
-      var l = $('.events img').length;
+      var index = $(this).parent('.events').data('inx');
+      var l = $('.events[data-inx="'+index+'"] img').length;
+
       var i = parseInt($(this).nextAll('img.active').data('item'));
   
       if ($(this).hasClass('left-arrow')) {
         if (i == 0) i = l;
         i--;
-        $('.events img').removeClass('active');
-        $('.events img[data-item = "' + i + '"]').addClass('active');
+        $('.events[data-inx="'+index+'"] img').removeClass('active');
+        $('.events[data-inx="'+index+'"] img[data-item = "' + i + '"]').addClass('active');
        
 
       }
       else if($(this).hasClass('right-arrow')) {
         if (i == l - 1) i = -1;
         i++;
-        $('.events img').removeClass('active');
-        $('.events img[data-item = "' + i + '"]').addClass('active');
+        $('.events[data-inx="'+index+'"] img').removeClass('active');
+        $('.events[data-inx="'+index+'"] img[data-item = "' + i + '"]').addClass('active');
 
       }
 

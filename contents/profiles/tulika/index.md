@@ -3,6 +3,11 @@ name : Dr. Tulika Jha
 template: profile.jade
 id: tulika
 order: 4
+links:
+  -  key: facebook
+     value: https://www.facebook.com/tulika.jha.50
+  - key: linkedin
+    value: https://www.linkedin.com/in/tulika-jha-91065882/
 ---
 
 

@@ -3,6 +3,11 @@ name : Ranjit Singh
 template: profile.jade
 id: ranjit
 order : 1
+links:
+  -  key: facebook
+     value: https://www.facebook.com/profile.php?id=100000273848205
+  -  key: linkedin
+     value: https://www.linkedin.com/in/ranjit-singh-67016470/
 ---
 
 - BE- Mechanical (BITS Pilani), MBA (IIM Ahmedabad)

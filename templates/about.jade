@@ -48,15 +48,118 @@ block bottom_scripts
         $('.details .profile[data-name="'+ $(this).data('name')+'"]').addClass('active')
       })
       $('#partners .card').first().trigger('click')
+      $('#partners .card .socials a.icon').click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        window.open(this.href);
+      })
   style.
     @media (max-width: 690px) {
      article.card > .top-img{display:none;}
+     section.profiles >h2{ left:5%;}
       h2 {font-size:1em !important;}
       section.profiles >h2{top:-32px !important}
       #vision{margin-top: -8em !important;}
     }
     article h2 {margin-bottom:0;}
     article .socials{
-    z-index:2;
-    cursor:pointer;
+      z-index:2;
+      cursor:pointer;
     }
+     .featured-image {
+      background-repeat: no-repeat;
+      padding: 0;
+      /* background-color: red; */
+      height: 15em;
+      background-position: 0 40%;
+      background-size: cover;
+    }
+     .h1-container{
+      top:3em;
+          text-align: center;
+          background-color: #f4f4f4;
+    }
+
+    h2#vision {
+        margin-top: -6.5em;
+        background: #fff;
+        width: 250px;
+        margin-left: -15px;
+        padding: 6px 0 3px 15px;
+    }
+     h2 {
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: .9;
+        min-height: 1.8em;
+        margin-top: 11px;
+    }
+     section.profiles{
+        border-top: 1px solid #ccc;
+        /*margin-top: -15px;*/
+        padding-top: 4em;
+        position: relative;
+        padding-bottom:10px;
+    }
+     div.profiles{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        position: relative;
+     
+     }
+
+
+     section.profiles article.card {
+        flex: .22;
+        background: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        border: 1px solid #ccc;
+    }
+
+     article.card > .top-img {
+        max-width: 50%;
+        border-radius: 50%;
+        height: 5em;
+        width: 5em;
+        background-size: cover;
+        margin: 0 auto;
+        margin-top: -25%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+     section.profiles >h2 {
+        /*content: "PROFILES";*/
+        display: block;
+        background: #eee;
+        position: absolute;
+        top: -43px;
+        left: 12%;
+        padding: 10px 22px;
+        font-weight: bold;
+    }
+
+     section .details .profile{display: none;}
+     .details {
+        background: #fff;
+        width: 85%;
+        margin: 1em auto;
+        padding: 1em 2.5%;
+        border: 1px solid #ccc;
+    }
+    article.card.active:after {
+        content: "";
+        display: block;
+        background: #fff;
+        height: 2em;
+        bottom:-1.2em;
+        position: absolute;
+        width: 100%;
+        left: -1px;
+        border: 1px solid #ccc;
+        border-width: 0 1px;
+    }
+     section .details .profile.active{display: block;}

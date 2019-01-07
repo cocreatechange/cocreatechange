@@ -39,12 +39,11 @@ module.exports = (env, callback) ->
       # console.log a.metadata
     articles.sort (a, b) -> a.metadata.order.toString() - b.metadata.order.toString()
     return articles
-  getEventPosters = (contents) ->
-
-  
+  getEventPosters = (contents, hash) ->
+    console.log hash
     # helper that returns a list of articles found in *contents*
     # note that each article is assumed to have its own directory in the articles directory
-    posters  = Object.keys contents.img.events
+    posters  = Object.keys contents.img.events[hash]
     # skip articles that does not have a template associated
     return posters
 

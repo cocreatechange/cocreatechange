@@ -3,6 +3,11 @@ name : Nupur Arya
 template: profile.jade
 id: nupur
 order : 3
+links:
+  -  key: facebook
+     value: https://www.facebook.com/nupur.arya.5
+  - key: linkedin
+    value: https://www.linkedin.com/in/nupurarya/
 ---
 -Alumni - Harvard Business School, Advanced Management Program
 -Graduated from Brandeis University

@@ -39,8 +39,12 @@ html(lang='en')
                 a(href = locals.url + '/about.html#vision') Vision
               li 
                 a(href = locals.url + '/about.html#partners') Partners
-          li   
-            a(href = locals.url + '/events.html') Events
+          li   Events
+            ul.sub-menu
+              li
+                a(href = locals.url + '/events.html#ongoing') On-going Events
+              li
+                a(href = locals.url + '/events.html#past') Past Events
           li 
             a(href = locals.url + '/contact.html') Contact Us
     block header
@@ -52,13 +56,34 @@ html(lang='en')
     block aftercontent
           
     footer
-      div
+        a.logo(href = '/', style="background-image: url(#{locals.logo})")
+        div.footer-text
+          | We are a team of credentiated (and practicing) mental health professionalls trained in India and the United States. Our core competency lies in empowering individuals and institutions  through our training and consultancy.
+        div.venue
+          span.venue VENUE
+          address Aspire Labs, B-37, Sector 1 Noida
+            br
+            [Red Brick building near Gail(India) Ltd.
+      
         block footer
-          "Footer area"
           section.copy
            // p &copy; #{ new Date().getFullYear() } #{ locals.owner } 
               //- please leave the "powered by" if you use the design
-    block bottom_scripts
+  script.
+    window.onhashchange = function(){
+    if(window.scrollY > 0 || location.hash){
+        window.scrollBy(0, -100)
+    }
+    }
+    
+    window.onscroll = function(){
+      if (window.scrollY > 20){
+          $('header').addClass('scroll');
+        }
+        else  
+          $('header').removeClass('scroll');
+    }
+  block bottom_scripts
 
 
 
