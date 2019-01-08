@@ -8,6 +8,7 @@
     "featured_image":"./img/featured_img.png"
  
   },
+  "baseUrl":"/",
   "plugins": [
     "./plugins/paginator.coffee"
   ],
