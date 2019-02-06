@@ -3,13 +3,13 @@ title: About Us
 author: baker
 date: 2013-04-01
 template: about.jade
-filename: about.html
+file: about
 featured-img: img/aboutus-img.jpg
 ---
 
 
 <section id='vision'>
-## VISION
+## Vision
 
 Throughout history there has been a deeply embedded conviction that under the right conditions people can help each other come to grips with problems and challenges in living.
 

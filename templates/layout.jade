@@ -22,7 +22,7 @@ html(lang='en')
       link(rel="icon" href=locals.url+"/favico.ico" sizes="16x16")
       link(rel="icon" href=locals.url+"/favico32.ico" sizes="32x32")
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-      link(href="https://fonts.googleapis.com/css?family=Montserrat", rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
       link(rel='stylesheet', href=locals.url+contents.css['main.css'].url)
       block top_scripts
   body(class=bodyclass)
@@ -42,7 +42,10 @@ html(lang='en')
                 a(href = locals.url + '/about.html#vision') Vision
               li 
                 a(href = locals.url + '/about.html#partners') Partners
-          li   Events
+          li   
+            a(href = locals.url + '/services.html')  Services
+          li  
+            a(href = locals.url + '/events.html')  Events
             ul.sub-menu
               li
                 a(href = locals.url + '/events.html#ongoing') On-going Events
@@ -51,18 +54,23 @@ html(lang='en')
           li 
             a(href = locals.url + '/contact.html') Contact Us
     block header
+      if page.title
+        div.h1-container
+          h1.container #{page.title}
+
+    
     block beforeContent
-
-
+    
     div.container
         block content
     block aftercontent
           
     footer
+      div.container
         a.logo(href = '/', style="background-image: url(#{locals.logo})")
         div.footer-text
           | We are a team of credentiated (and practicing) mental health professionalls trained in India and the United States. Our core competency lies in empowering individuals and institutions  through our training and consultancy.
-        div.venue
+      div.venue
           span.venue VENUE
           address Aspire Labs, B-37, Sector 1 Noida
             br

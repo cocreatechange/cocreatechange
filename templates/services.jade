@@ -1,0 +1,33 @@
+extends layout
+
+block append vars
+  - bodyclass = 'about'
+
+block prepend title
+  | #{ page.title + ' - '}
+
+
+block content
+  each h in page.metadata.headings
+    section
+      h3
+        = h.text
+      if h.sub
+        ul.subservices
+          each s in h.sub
+            li 
+              = s
+  style.
+    .subservices { display:flex;justify-content:space-between; flex-wrap:wrap;margin-bottom:2em;margin-top:1em;}
+    .subservices li{
+      list-style-type:none;
+      width:150px;
+      box-shadow:0 0 1px 1px #ccc;
+      text-align:center;
+      padding:2%;
+      background-color:#eee;
+      border-bottom:3px solid #dd3634;
+      font-size:.6em;
+
+
+    }

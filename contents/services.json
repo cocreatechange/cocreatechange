@@ -1,0 +1,44 @@
+{ 
+  "title": "Services",
+  "template": "services.jade",
+  "filename": "services.html",
+  "headings":
+  [
+    {
+      "text":"Workshop",
+      "sub":[
+        "Parenting",
+        "Practical",
+        "Mentoring"
+      ]
+    },
+    {
+      "text":"Consultancy",
+      "sub":[
+        "Instritutional Outreach",
+        "Capacity Building for Suicide",
+        "Capacity Building for substance Abuse",
+        "Behavioral Addiction"
+      ]
+    },
+    {
+      "text":"Testing",
+      "sub":[
+    "INTELLIGENCE TESTS",
+    "WRITING AND LANGUAGE TEST",
+    "AUTISM",
+    "TEACHERS / PARENTAL REPORTS",
+    "SOCIAL COMPETENCE TEST",
+    "APTITUDE",
+    "ACCURACY AND SPEED",
+    "NEUROPSYCHOLOGICAL TESTS",
+    "VISUAL MOTOR ",
+    "PERSONALITY TESTS"
+    ]}
+  ]
+}
+
+
+
+
+

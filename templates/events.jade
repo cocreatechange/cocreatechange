@@ -15,8 +15,9 @@ block content
   each eventtype in x
     - var articles =  env.helpers.getEventPosters(contents,eventtype)
     if articles.length > 0
+      
       h3(id=eventtype) 
-        | #{eventtype} Events
+          | #{eventtype} Events
       div.events(data-inx = index)
         if articles.length > 2
           span.left-arrow
@@ -29,7 +30,7 @@ block content
 
 block bottom_scripts
   style.
-    body{padding-top:4em;}
+
     @media (max-width:600px){
       .events {
         height:400px !important;
@@ -40,8 +41,9 @@ block bottom_scripts
       font-variant: all-small-caps;
       font-weight: 600;
       font-style: normal;
+      color:#dd3634;
       font-size: 2em;
-      margin-top: 0;
+      margin-top: 2em;;
       text-align: center;
     }
     .events {

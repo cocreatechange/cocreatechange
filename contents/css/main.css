@@ -9,13 +9,15 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 21px;
   line-height: 1.52;
-  background-color: #eee;
-  padding-top: 3em;
+  background-color: #f2f4f5;
+  padding-top: 7em;
+  color: #525454;
   text-rendering: optimizeLegibility;
 }
+a{color:inherit; transition:color 1s ease 0s;}
 
 .content-wrap {
   width: 34em;
@@ -27,9 +29,7 @@ body {
 
 
 /*********** ELEMENTS **************/
-body, a {
-  color: #171717;
-}
+
 
 
 
@@ -52,12 +52,7 @@ h1 {
   /*margin-bottom: 1em;*/
 }
 
-h2 {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.43;
-  margin-bottom: 1.35em;
-}
+
 
 
 ol, ul {
@@ -107,6 +102,7 @@ header.scroll .menu-bar{
     box-shadow: 0px 1px 1px #ccc;
     /*border-bottom: 1px solid #ccc;*/
 }
+header.scroll .logo{background-size:100px auto;}
 .header {
   margin: 3em 0 5em;
 }
@@ -124,7 +120,7 @@ footer{text-align: center;}
       margin-left:5px;
       font-size:.7em;
       transition:  1s;
-      color: #545454;
+      color: #9d9d9d;
     }
     .icon:hover{
           transform: scale(1.5);
@@ -138,11 +134,15 @@ p{
 }
 footer {
     text-align: center;
+    background: #fff;
+    border-top: 5px solid #dd3634;
+}
+footer .container{
     display: flex;
     flex-wrap: wrap;
-    background: #fff;
-    border-top: 5px solid red;
     align-items: center;
+    padding:2% 0;
+
 }
 footer .footer-text {
     flex: 1;
@@ -154,12 +154,12 @@ footer .footer-text {
     background: #ccc;
     width: 100%;
 } footer span.venue {
-    color: red;
+    color: #dd3634;
     font-weight: bold;
     display: inline-block;
     width: auto;
     vertical-align: top;
-    right: -3em;
+    right: -2em;
     position: relative;
 }
 footer address {
@@ -167,11 +167,11 @@ footer address {
     font-style: normal;
     text-align:right;
 }
-footer .logo{height: 46px;}
+footer .logo{margin:0; height: 46px; background-position: left 0px; background-size: 150px auto;}
 /*****************************/
 
 .menu-bar {
-    height: 3em;
+    height: 5em;
     padding-right: 1em;
     position: absolute;
     top: 0;
@@ -184,10 +184,10 @@ footer .logo{height: 46px;}
     background-color: #fff;
 }
 .logo {
-    width: 200px;
+    width: 250px;
     margin: 1em;
     background-position: center center;
-    background-size: 150px auto;
+    background-size: 200px auto;
     background-repeat: no-repeat;
     height: 60px;
 }
@@ -229,36 +229,42 @@ ul.menu li:hover{  opacity: 1;  transition: opacity 1s ease 0;}
 .featured-image {
     background-repeat: no-repeat;
     padding: 0;
-    /*background-color: red;*/
-    height: 100%;
-    background-position: top;
+    /* background-color: red; */
+    height: 800px;
+    background-position: 5%;
+    background-size: cover;
 }
 .h1-container {
-    /*background-color: #E30613;*/
-    /*background-color: #84175a;*/
-    font-size: 1.4em;
-    margin: 0 auto;
-    padding: 15px 0;
-    max-width: 475px;
-    width: 100%;
-    /*margin-top: 100px;*/
-    position: relative;
-    top: 192px;
-    
-    /*left: calc(50%-300px);*/
+  
+    text-align: center;
+    background-color: #dd3634;
 }
+.h1-container h1, .h1-container h2{
+    padding: 1em 0;
+    border: 0;
+    text-align: left;
+    font-size: 1.6em !important;
+    color: #fff;
+    background-color: transparent;
+    font-variant: small-caps;
+}
+h3{
+        letter-spacing: 4px;
+        font-weight: 100;
+        font-size: 1.1em;
+      }
 .container {
-    max-width: 1000px;
+    max-width: 800px;
     width: 90%;
-    padding: 5%;
+    padding: 2%;
     padding-top: 10px;
     background-color: #fff;
     margin: 0 auto;
     /*margin-bottom: 15px;*/
 }
-.about .container {padding-top: 5em;}
+/*.about .container {padding-top: 5em;}*/
 body >.container{
-    box-shadow: 0 0 0 1px #ccc;
+    box-shadow: 0px 1px 0px 1px #ddd;
 
 }
 .menu-text { display: none;}
@@ -335,36 +341,7 @@ ul.sub-menu{
   body{
       font-size: 14px;
   }
-  .content-wrap {
-    width: auto;
-    padding: 0 1em;
-  }
-  .header {
-    margin: 1em 0;
-  }
-  .header h1 {
-    font-size: 1.4em;
-    margin-bottom: 0.6em;
-  }
-  .header .description {
-    font-size: 1em;
-  }
-  .article {
-    margin: 1em 0 2.5em;
-  }
-  .archive {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .archive * {
-    float: none !important;
-    line-height: 1.6 !important;
-    width: auto !important;
-    height: auto !important;
-    text-align: left !important;
-    border: 0 !important;
-    margin: 0 !important;
-  }
+
   footer .nav {
     margin: 1em 0;
   }
