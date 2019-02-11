@@ -21,10 +21,10 @@ links:
 - Chair, Women’s Network
 - Schwartz round/ Balint group facilitator
 
-Dr Jha has 15 years of experience in assessing and managing mental health problems. Her core
-expertise is in Adolescent and Adult community Psychiatry. She has specialist skills in psychotherapy,
+Dr. Jha has 15 years of experience in assessing and managing mental health problems. Her core
+expertise is in Adolescent and Adult community Psychiatry. She has specialization in psychotherapy,
 eating disorders, personality disorders, perinatal psychiatry and mood disorders. She has clinically led
-multidisciplinary teams that have held caseloads of 500+ patients. Dr Jha is a trainer, mentor and coach
+multidisciplinary teams that have held caseloads of 500+ patients. Dr. Jha is a trainer, mentor and coach
 for junior doctors. She is passionate about the governance of her organization and strives to continuously
 improve the quality of care she provides. She has worked in the safer care service that reduces self
 harm/suicide. She believes in wiping away stigma that creates a barrier in accessing the help that is
@@ -33,5 +33,5 @@ essential in healing poor mental health.
 
 She has got various recognitions and has been awarded with ** Clinical Excellence Award ** HPFT NHS
 (2016/17), **Dip Psych Merit Award** UNIVERSITY OF MANCHESTER (2009), **Cert. in Psychoanalytic
-Theory** TAVISTOCK &amp; PORTMAN TRUST (2013) and *Leadership Award* NHS leadership academy
+Theory** TAVISTOCK & PORTMAN TRUST (2013) and *Leadership Award* NHS leadership academy
 London (2018).

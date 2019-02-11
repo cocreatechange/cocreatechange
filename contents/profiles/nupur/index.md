@@ -9,9 +9,11 @@ links:
   - key: linkedin
     value: https://www.linkedin.com/in/nupurarya/
 ---
--Alumni - Harvard Business School, Advanced Management Program
--Graduated from Brandeis University
--Chief Strategic Advisor to the Board at IAL
+
+  - Alumni 
+  - Harvard Business School, Advanced Management Program.
+  - Graduated from Brandeis University.
+  - Chief Strategic Advisor to the Board at IAL.
 
 
 As Chief Strategic advisor, Nupur’s has helped IAL expand through her insightful strategic inputs.
@@ -34,7 +36,7 @@ she worked for Merrill Lynch and started her career at PwC.
 
 Through her work with Sasakawa India Leprosy Foundation, American India Foundation and
 Sakhi she has tried to measure her contribution in meaningfully impacted lives rather than just
-statistics on a balance sheet. Her role as an advisor to boards, investor in start - ups and mentor
+statistics on a balance sheet. Her role as an advisor to boards, investor in start-ups and mentor
 to young professionals has provided a renewed sense of purpose. Nupur is currently serving as
 Alumni Co Chair of her Harvard class and Conference Co Lead of The Future of Work –
-Accelerating Gender Parity conference hosted by the HBS Club of India and HBSI
+Accelerating Gender Parity conference hosted by the HBS Club of India and HBSI.

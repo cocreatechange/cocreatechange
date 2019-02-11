@@ -37,9 +37,9 @@ html(lang='en')
             a(href = locals.url+'/about.html') About
             ul.sub-menu
               li 
-                a(href = locals.url + '/about.html#mission') Mission
-              li 
                 a(href = locals.url + '/about.html#vision') Vision
+              li 
+                a(href = locals.url + '/about.html#mission') Mission
               li 
                 a(href = locals.url + '/about.html#partners') Partners
           li   
@@ -60,7 +60,7 @@ html(lang='en')
 
     
     block beforeContent
-    
+
     div.container
         block content
     block aftercontent
@@ -69,12 +69,12 @@ html(lang='en')
       div.container
         a.logo(href = '/', style="background-image: url(#{locals.logo})")
         div.footer-text
-          | We are a team of credentiated (and practicing) mental health professionalls trained in India and the United States. Our core competency lies in empowering individuals and institutions  through our training and consultancy.
+          | We are a team of credentialed (and practicing) mental health professionals trained in India and the United States. Our core competency lies in empowering individuals and institutions through our training and consultancy.
       div.venue
           span.venue VENUE
           address Aspire Labs, B-37, Sector 1 Noida
             br
-            [Red Brick building near Gail(India) Ltd.
+            [Red Brick building near Gail(India) Ltd.]
       
         block footer
           section.copy
@@ -98,6 +98,7 @@ html(lang='en')
       $('ul.menu').toggleClass('show')
     });
   block bottom_scripts
+block bottom_style
 
 
 

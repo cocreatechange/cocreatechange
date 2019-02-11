@@ -6,6 +6,6 @@ deploy:
 	git init . && \
 	git add . && \
 	git commit -m "Deploy"; \
-	git push "git@github.com:apoorvasrinivasan/cocreatechange.git" master:gh-pages --force && \
+	git push "git@github.com:coccreatechange/cocreatechange.git" master:gh-pages --force && \
 	rm -rf .git
 	
