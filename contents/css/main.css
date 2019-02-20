@@ -168,7 +168,12 @@ footer address {
     font-style: normal;
     text-align:right;
 }
-footer .logo{margin:0; height: 46px; background-position: left 0px; background-size: 150px auto;}
+footer .logo {
+    margin: 0;
+    height: 66px;
+    background-position: left 0px;
+    background-size: 129px auto;
+}
 /*****************************/
 
 .menu-bar {
@@ -185,12 +190,12 @@ footer .logo{margin:0; height: 46px; background-position: left 0px; background-s
     background-color: #fff;
 }
 .logo {
-    width: 250px;
+    width: 150px;
     margin: 1em;
     background-position: center center;
-    background-size: 200px auto;
+    background-size: 149px auto;
     background-repeat: no-repeat;
-    height: 60px;
+    height: 79px;
 }
 ul.menu {
     margin: 0;
