@@ -1,0 +1,12 @@
+
+{
+	"title": "contact us",
+	"date": "2018-31-12",
+	"template": "contact.jade",
+	"filename": "contact.html",
+	"email": "abcd@gmail.com",
+	"phone": "8009000",
+	"address":"Aspire Labs"
+}
+
+

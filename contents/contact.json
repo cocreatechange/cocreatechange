@@ -1,0 +1,15 @@
+
+{
+	"title": "contact us",
+	"template": "contact.jade",
+	"filename": "contact.html",
+	"email": "directorsoffice@cocreatechange.in",
+	"phone": "+918810585410, +919810702428",
+	"address":"AspireLabs\nB-37, Sector 1\nNoida\nUttar Pradesh - 201301",
+	"links":[
+		{"key":"facebook", "value":"https://www.facebook.com/cocreatechange/"},
+		{"key":"instagram", "value":"https://www.instagram.com/cocreatechange/"}
+	]
+}
+
+

@@ -1,0 +1,105 @@
+doctype html
+block vars
+  - var bodyclass = null;
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width')
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-71505892-1', 'auto');
+        ga('send', 'pageview');
+      title
+        block title
+          = locals.name
+      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      link(rel="icon" href=locals.url+"/favico.ico" sizes="16x16")
+      link(rel="icon" href=locals.url+"/favico32.ico" sizes="32x32")
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+      link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
+      link(rel='stylesheet', href=locals.url+contents.css['main.css'].url)
+      block top_scripts
+  body(class=bodyclass)
+    header
+      div.menu-bar
+        a.logo(href = '/', style="background-image: url(#{locals.logo})")
+        div.menu-text MENU
+        ul.menu
+          li
+            a(href='/') Home
+          li 
+            a(href = locals.url+'/about.html') About
+            ul.sub-menu
+              li 
+                a(href = locals.url + '/about.html#vision') Vision
+              li 
+                a(href = locals.url + '/about.html#mission') Mission
+              li 
+                a(href = locals.url + '/about.html#partners') Partners
+          li   
+            a(href = locals.url + '/services.html')  Services
+          li  
+            a(href = locals.url + '/events.html')  Events
+            ul.sub-menu
+              li
+                a(href = locals.url + '/events.html#ongoing') On-going Events
+              li
+                a(href = locals.url + '/events.html#past') Past Events
+          li 
+            a(href = locals.url + '/contact.html') Contact Us
+    block header
+      if page.title
+        div.h1-container
+          h1.container #{page.title}
+
+    
+    block beforeContent
+
+    div.container
+        block content
+    block aftercontent
+          
+    footer
+      div.container
+        a.logo(href = '/', style="background-image: url(#{locals.logo})")
+        div.footer-text
+          | We are a team of credentialed (and practicing) mental health professionals trained in India and the United States. Our core competency lies in empowering individuals and institutions through our training and consultancy.
+      div.venue
+          span.venue VENUE
+          address Aspire Labs, B-37, Sector 1 Noida
+            br
+            [Red Brick building near Gail(India) Ltd.]
+      
+        block footer
+          section.copy
+           // p &copy; #{ new Date().getFullYear() } #{ locals.owner } 
+              //- please leave the "powered by" if you use the design
+  script.
+    window.onhashchange = function(){
+    if(window.scrollY > 0 || location.hash){
+        window.scrollBy(0, -100)
+    }
+    }
+    
+    window.onscroll = function(){
+      if (window.scrollY > 20){
+          $('header').addClass('scroll');
+        }
+        else  
+          $('header').removeClass('scroll');
+    }
+    $('.menu-text').click(function(){
+      $('ul.menu').toggleClass('show')
+    });
+  block bottom_scripts
+block bottom_style
+
+
+
+

@@ -1,0 +1,30 @@
+extends layout
+
+block append vars
+  - bodyclass = 'about'
+
+block prepend title
+  | #{ page.title + ' - '}
+
+
+block content
+    section.services!= typogr(page.html).typogrify()
+block bottom_style
+
+  style.
+    .services ul { display:flex;justify-content:space-between; flex-wrap:wrap;margin-bottom:2em;margin-top:1em;}
+    section.services ul li{
+      list-style-type:none;
+      width:150px;
+      box-shadow:0 0 1px 1px #ccc;
+      text-align:center;
+      padding:2%;
+      background-color:#eee;
+      border-bottom:1px solid #dd3634ab;
+      font-size:.6em;
+      margin:5px 0;
+
+
+    }
+    h2 {color: #dd3634; font-weight:100; margin-bottom:15px;}
+    h2:not(:first-child){ border-top:1px solid #ccc; padding-top:1em;}

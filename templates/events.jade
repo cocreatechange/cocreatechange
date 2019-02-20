@@ -1,0 +1,122 @@
+
+extends layout
+
+
+
+block prepend title
+  | #{ page.title + ' - '}
+
+
+
+
+block content   
+  - var x = ['ongoing','upcoming','past']
+  - index=0
+  each eventtype in x
+    - var articles =  env.helpers.getEventPosters(contents,eventtype)
+    if articles.length > 0
+      
+      h3(id=eventtype) 
+          | #{eventtype} Events
+      div.events(data-inx = index)
+        if articles.length > 2
+          span.left-arrow
+          span.right-arrow
+        -var i = 0
+        each a  in articles
+          img(data-item = i, src="img/events/"+eventtype+'/' +a)
+          -i++
+        -index++
+
+block bottom_scripts
+  style.
+
+    @media (max-width:600px){
+      .events {
+        height:400px !important;
+      max-width:95%;
+        }
+    }
+    h3 {
+      font-variant: all-small-caps;
+      font-weight: 600;
+      font-style: normal;
+      color:#dd3634;
+      font-size: 2em;
+      margin-top: 2em;;
+      text-align: center;
+    }
+    .events {
+      display: flex;
+      position: relative;
+      justify-content: center;
+    
+      margin:0 auto;
+        margin-top:2em !important;
+        
+    }
+
+    .events > img {
+      display: none;
+      padding:10px;
+        background-color:#fff;
+    }
+
+    .events > img.active {
+      display: block;
+
+      max-width:100%;
+      border:1px solid #ccc;
+    }
+
+    .events span {
+      position: absolute;
+      display: block;
+      height: 40px;
+      width: 40px;
+      top: 50%;
+      cursor: pointer;
+      opacity:.7;
+      background-image: url(img/arrows.png);
+      background-repeat: no-repeat;
+    }
+    .events span:hover {opacity:1}
+    span:active {
+      transform: scale(.8);
+      opacity: .5;
+    }
+    .events span.left-arrow {
+      left: 0;
+      background-position: center -36px;
+    }
+
+    .events span.right-arrow {
+      right: 0;
+      background-position: center 0;
+    }
+  script.
+    $('.events').each(function(){$(this).children('img').first().addClass('active');})
+    $('.events span').click(function() {
+      var index = $(this).parent('.events').data('inx');
+      var l = $('.events[data-inx="'+index+'"] img').length;
+
+      var i = parseInt($(this).nextAll('img.active').data('item'));
+  
+      if ($(this).hasClass('left-arrow')) {
+        if (i == 0) i = l;
+        i--;
+        $('.events[data-inx="'+index+'"] img').removeClass('active');
+        $('.events[data-inx="'+index+'"] img[data-item = "' + i + '"]').addClass('active');
+       
+
+      }
+      else if($(this).hasClass('right-arrow')) {
+        if (i == l - 1) i = -1;
+        i++;
+        $('.events[data-inx="'+index+'"] img').removeClass('active');
+        $('.events[data-inx="'+index+'"] img[data-item = "' + i + '"]').addClass('active');
+
+      }
+
+
+    })
