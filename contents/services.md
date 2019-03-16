@@ -6,21 +6,27 @@ filename: services.html
 ---
 
 ## Children
-#### Clinical Services
+#### 1. Clinical Services
+  -  Children's Behavioral and Emotional Disorders 
+  -  Children's Behavioral and Emotional Disorders
+  - Children Conduct Disorder Oppositional
+  - Defiant Disorder ODD
+  - Children Obsessive-Compulsive Disorder OCD
+  - Children with ADHD
+  - Children with Anxiety
+  - Children with Autism
+  - Children with Depression
+
+#### 2. Development Services
+  - EARLY INTERVENTION
+  - MIDDLE YEARS PROG.
+  - INFANT DEVELOPMENT PROG.
+  - INTEGRATED HOME PLAN
 
 
-Problem Areas
+####  3. Assessments
 
-- Children's Behavioral and Emotional Disorders
-- Children Conduct Disorder Oppositional
-- Defiant Disorder ODD
-- Children Obsessive-Compulsive Disorder OCD
-- Children with ADHD
-- Children with Anxiety
-- Children with Autism
-
-Assessments
-1. Instruments for assessment
+<p class='accordian'>Instruments for assessment</p>
   - Wechsler Intelligence Scale for Children-IV (WISC-IV)
   - Wechsler Individual Achievement Test- Second Edition (WIAT-II)
   - Neuropsychological Assessment for Children, Second Edition (NEPSY-II)
@@ -34,8 +40,8 @@ Assessments
   - Indian Scale for Assessment of Autism (ISAA)
   - Childhood Autism Rating Scale (CARS) – 2 
 
-2. OT assessment​
 
+<p class="accordian">OT assessment</p>
   - Sensory Integration and Praxis Test (SIPT)​
   - Sensory Processing Checklist questionnaire​
   - Sensory Processing Measure (SPM)​
@@ -44,22 +50,44 @@ Assessments
   - Observations during unstructured play.​
   - Interview with parent.​
 
-3. Career counselling
-    - Interest inventory and aptitude tests
+<p class="accordian">Career counselling</p>
+  - Interest inventory and aptitude tests 
 
-#### Development Services
-- EARLY INTERVENTION
-- MIDDLE YEARS PROG.
-- INFANT DEVELOPMENT PROG.
-- INTEGRATED HOME PLAN
+
+
+## Training
+
+Throughout history there has been a deeply embedded conviction that under the right conditions people can help each other come to grips with problems and challenges in living.
+
+ 
+
+Statistics today reveal that only a small fraction of help sought on any given day comes from professional helpers and therapists. Most people seek help in informal ways from informal sources. The analytics make for a convincing argument for us to stipulate, that as a society, we need Life Management Skills to be as much a part of our School and College curriculum as Math and History.
+
+ 
+
+We at Co-Create Change see ourselves as enablers striving to institutionalize this conviction through our vision to train people to be able to help others and themselves deal with the distressing challenges of life.
+
+
+ 
+
+As a first step towards actualizing this vision our mission is to build Counseling skills in Graduate and Post graduate students of Psychology and Counseling who have studied the curriculum but not had the opportunity to undergo skill training under the guided supervision of experts. Through bridging this gap between knowledge and application we envision these students becoming our ambassadors in Co-create Change.
+
+ 
+
+
+Thereafter, as a part of our training vision, we aspire to square the circle by building counseling, mentoring and problem solving skills in each and every individual in society.
 
 ## Adolecents
-Our STAR - Services For Teens at Risk. ( Stress, anxiety, depression, suicide and drugs).​
-FAQs/myths/facts.​
-ASAP – Adolescent Suicide Awareness Program​
+**STAR** (Services For Teens At Risk Program)  This combines clinical and outreach services to help prevent risk behaviours in adolescents. It consists of  an internationally observed protocol for adolescents at risk of substance use disorder, suicide prevention etc.  It comprises of building awareness among vulnerable groups through targeted intervention, education of professionals, and the treatment of at-risk youth and their families.
+ 
+The program focuses on the causality of adolescent crisis’, and has helped to identify the role of academic pressure, loneliness, inadequacy, substance abuse, and mood disorders as risk factors for turbulence among the youth. Consequently, we have developed national practice guidelines for the treatment of and management of adolescent stress, anxiety, depression and suicidal behaviour
+ 
+**ASAP** (Adolescent Suicide Awareness Program) – Through this our mission is to offer state-of-the-art (psychological) emergency responsive care for children and adolescents with depression or anxiety, or who are at risk for suicidal behaviour.
+ 
 
 ## School
 (SEAT PROGRAM)School emergency assist training.​
+
 ESPS – Educational Partners in Suicide Prevention​
 
 - To enable the schools to set up helplines.​
@@ -68,7 +96,7 @@ ESPS – Educational Partners in Suicide Prevention​
 
 ## Parents
 
-PARENT LINE - Love Is Not Enough.​
+LINE Program- Love Is Not Enough.​
 
 PPSP – Parental Partners In Suicide Prevention.​
 
@@ -81,9 +109,7 @@ PPSP – Parental Partners In Suicide Prevention.​
 
 ## INSTITUTIONAL ​
 
-List of problem related areas​
-
-Training programmes on various problem related areas:​
+Trainings and workshops on following problem areas:​
 
 - Burnout​
 - Work life balance​

@@ -9,10 +9,17 @@ block prepend title
 
 block content
   section.services!= typogr(page.html).typogrify()
+
+block bottom_scripts
+  script.
+    $('.accordian').click(function(){
+        $(this).toggleClass('active')
+    })
+
 block bottom_style
 
   style.
-    .services ul { display:flex;justify-content:space-between; flex-wrap:wrap;margin-bottom:2em;margin-top:1em;}
+    .services ul { display:flex;justify-content:space-between; flex-wrap:wrap;margin-bottom:2em; margin-left:2em;}
     section.services ul li{
       list-style-type:none;
       width:150px;
@@ -20,11 +27,36 @@ block bottom_style
       text-align:center;
       padding:2%;
       background-color:#eee;
-      border-bottom:1px solid #dd3634ab;
+      border-bottom:1px solid #69af80;
       font-size:.6em;
       margin:5px 0;
 
 
     }
-    h2 {color: #dd3634; font-weight:100; margin-bottom:15px;}
+    .accordian {
+      margin-left: 2.5em;
+      border: 1px solid #69af80;
+      padding: 10px;
+      width: 50%;
+      position:relative;
+    }
+    .accordian + p + ul {display: none;}
+    .accordian.active + p + ul {display: flex;}
+    .accordian:after {
+      content: "";
+      width: 0;
+      height: 0;
+      display: block;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent transparent #69af80;
+      position: absolute;
+      right: 18px;
+      top: 11px;
+    }
+    .accordian.active:after {
+      border-color: #69af80 transparent transparent transparent;
+      top:15px;
+    }
+    h2 { margin-bottom:15px;}
     h2:not(:first-child){ border-top:1px solid #ccc; padding-top:1em;}

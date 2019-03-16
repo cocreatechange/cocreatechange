@@ -16,7 +16,7 @@ block content
     - var articles =  env.helpers.getEventPosters(contents,eventtype)
     if articles.length > 0
       
-      h3(id=eventtype) 
+      h2(id=eventtype) 
           | #{eventtype} Events
       div.events(data-inx = index)
         if articles.length > 2
@@ -64,7 +64,7 @@ block bottom_scripts
 
     .events > img.active {
       display: block;
-
+      height:250px;
       max-width:100%;
       border:1px solid #ccc;
     }

@@ -47,14 +47,17 @@ block bottom_scripts
         event.stopPropagation();
         window.open(this.href);
       })
+
+block bottom_style
   style.
     @media (max-width: 690px) {
      article.card > .top-img{display:none;}
       
       h2 {font-size:1em !important;}
-      #vision{margin-top: -8em !important;}
     }
+    blockquote{ font-size:.9em;}
     article h2 {margin-bottom:0;}
+
     article .socials{
       z-index:2;
       cursor:pointer;
@@ -80,20 +83,25 @@ block bottom_scripts
         position: relative;
         border: 1px solid #ccc;
     }
-
+    section.profiles article.card h3{
+      height:3em;
+      font-size:.8em;
+    } 
      article.card > .top-img {
         max-width: 50%;
         border-radius: 50%;
-        height: 5em;
-        width: 5em;
+        height: 4em;
+        width: 4em;
         background-size: cover;
         margin: 0 auto;
-        margin-top: -25%;
+        margin-top: -15%;
         background-repeat: no-repeat;
         background-position: center;
-        border: 5px solid #fff;
-        border-width: 5px 5px 0 5px;
+        border: 5px solid #69af80a6;
+        border-width: 5px 5px 5px 5px;
     }
+    .icon:before{font-size:1.3em;}
+    .icon{width:1em !important;}
 
      section.profiles >h2 {
        text-indent:25%;
@@ -107,13 +115,15 @@ block bottom_scripts
         margin: 1em auto 0 auto;
         padding: 1em 2.5%;
         border: 1px solid #ccc;
+        
     }
+    .details p{ font-size:.7em;}
     article.card.active:after {
         content: "";
         display: block;
         background: #fff;
-        height: 2em;
-        bottom:-1.2em;
+        height: 1.6em;
+        
         position: absolute;
         width: 100%;
         left: -1px;

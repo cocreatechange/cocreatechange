@@ -8,32 +8,28 @@ featured-img: img/aboutus-img.jpg
 ---
 
 
+Co-create Change is an internationally recognised centre for Child and Adolescent services, focused on maximising the potential, wellbeing and participation of children and young adults (0 to 25 years) in their families, schools and communities.
+We work collaboratively with all stakeholders in a child’s environment (namely, parents, teachers, schools and colleges) to develop an evidence-based guidance, treatment and resources focussed on the child’s social, emotional, psychological and academic growth.
+
+<blockquote>
+“It is easier to build strong children than to repair broken adults.”   
+- Frederick Douglass, abolitionist and statesman
+</blockquote>
+<blockquote>
+"A characteristic of the normal child is he doesn’t act that way very often."  
+- unknown
+</blockquote>
+
+
 <section id='vision'>
+
 ## Vision
 
-Throughout history there has been a deeply embedded conviction that under the right conditions people can help each other come to grips with problems and challenges in living.
-
- 
-
-Statistics today reveal that only a small fraction of help sought on any given day comes from professional helpers and therapists. Most people seek help in informal ways from informal sources. The analytics make for a convincing argument for us to stipulate, that as a society, we need Life Management Skills to be as much a part of our School and College curriculum as Math and History.
-
- 
-
-We at Co-Create Change see ourselves as enablers striving to institutionalize this conviction through our vision to train people to be able to help others and themselves deal with the distressing challenges of life.
-
-
- 
-
-As a first step towards actualizing this vision our mission is to build Counseling skills in Graduate and Post graduate students of Psychology and Counseling who have studied the curriculum but not had the opportunity to undergo skill training under the guided supervision of experts. Through bridging this gap between knowledge and application we envision these students becoming our ambassadors in Co-Creating Change.
-
- 
-
-
-Thereafter, as a part of our overall vision we aspire to square the circle by building counseling, mentoring and problem solving skills in each and every individual in society.
+Our vision is to put children, young people and families first, and to provide psychological rehabilitation services for children and youth with physical, emotional, intellectual, communication and developmental needs.
 
 -----
 <section id='mission'>
-## MISSION
 
-Disseminating   mental   health   news   and   information,  destimatizing and challenging myths and stereotypes and promoting and delivering active directive therapy, with a focus on building accountability in the counseling profession.
+## Mission
 
+Every child and youth living life to their full potential.

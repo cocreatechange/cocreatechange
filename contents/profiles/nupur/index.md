@@ -2,7 +2,7 @@
 name : Nupur Arya
 template: profile.jade
 id: nupur
-order : 3
+order : 2
 links:
   -  key: facebook
      value: https://www.facebook.com/nupur.arya.5
@@ -10,8 +10,7 @@ links:
     value: https://www.linkedin.com/in/nupurarya/
 ---
 
-  - Alumni 
-  - Harvard Business School, Advanced Management Program.
+  - Alumni, Harvard Business School, Advanced Management Program.
   - Graduated from Brandeis University.
   - Chief Strategic Advisor to the Board at IAL.
 

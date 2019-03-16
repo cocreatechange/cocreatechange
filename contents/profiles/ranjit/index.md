@@ -2,7 +2,7 @@
 name : Ranjit Singh
 template: profile.jade
 id: ranjit
-order : 1
+order : 3
 links:
   -  key: facebook
      value: https://www.facebook.com/profile.php?id=100000273848205
