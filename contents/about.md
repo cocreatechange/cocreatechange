@@ -1,6 +1,5 @@
 ---
 title: About Us
-author: baker
 date: 2013-04-01
 template: about.jade
 file: about

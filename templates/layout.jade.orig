@@ -23,7 +23,7 @@ html(lang='en')
       link(rel="icon" href=locals.url+"/favico32.ico" sizes="32x32")
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
-  
+      link(href="https://fonts.googleapis.com/css?family=Sigmar+One", rel="stylesheet")
       link(href="https://fonts.googleapis.com/css?family=Josefin+Sans", rel="stylesheet")
       link(rel='stylesheet', href=locals.url+contents.css['main.css'].url)
       block top_scripts
@@ -37,14 +37,15 @@ html(lang='en')
             a(href='/') Home
           li 
             a(href = locals.url+'/about.html') About
-          li   
-            a(href = locals.url + '/services.html')  Services
-          li Partners
             ul.sub-menu
               li 
-                a(href = locals.url + '/beneficiary.html') Beneficiaries
-              li
-                a(href = locals.url + '/beneficiary.html#partners')  Partners
+                a(href = locals.url + '/about.html#vision') Vision
+              li 
+                a(href = locals.url + '/about.html#mission') Mission
+              li 
+                a(href = locals.url + '/about.html#partners') Partners
+          li   
+            a(href = locals.url + '/services.html')  Services
           li  
             a(href = locals.url + '/events.html')  Events
             ul.sub-menu
@@ -70,10 +71,10 @@ html(lang='en')
       div.container
         a.logo(href = '/', style="background-image: url(#{locals.logo})")
         div.footer-text
-          | We are a team of credentialed (and practicing) mental health professionals trained in India and the United States and UK. Our core competency lies in empowering individuals and institutions through our training and consultancy.
+          | We are a team of credentialed (and practicing) mental health professionals trained in India and the United States. Our core competency lies in empowering individuals and institutions through our training and consultancy.
       div.venue
           span.venue Office: 
-          address Aspirelabs, B-37, Sector 1 Noida, UP -201301
+          address Aspirelabs, B-37, Sector 1 Noida
             
       
         block footer

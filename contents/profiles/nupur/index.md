@@ -10,32 +10,35 @@ links:
     value: https://www.linkedin.com/in/nupurarya/
 ---
 
-  - Alumni, Harvard Business School, Advanced Management Program.
-  - Graduated from Brandeis University.
-  - Chief Strategic Advisor to the Board at IAL.
+ - Alumni of Harvard Business School
+ - Member of Harvard Alumni for Mental Health
+ - Board advisor to IAL, India’s first and largest entertainment company
+ - Former Asia Head (Ex Japan) Structured Credit at Nomura
 
 
-As Chief Strategic advisor, Nupur’s has helped IAL expand through her insightful strategic inputs.
-IAL is India’s largest entertainment company with over $1 billion assets under management. The
-company is currently developing 4 destinations across 500 acres with nearly 10 million square
-feet of commercial and entertainment offerings. Under the verticals of amusement, retail,
-hospitality, and FnB, the company offers water and amusement parks, golf courses and
-residential villas, shopping malls and hotels.
+With 15 years of experience across 3 countries, Nupur Arya brings a global
+perspective to COCH. Having started her career at PwC in New Delhi, she
+transitioned to investment banking in New York with Merrill Lynch and
+subsequently Lehman Brothers. She later joined Nomura in Hong Kong as
+Asia Head of the structured credit syndicate and secondary trading
+business. After serving as a consultant to IFC, part of the World Bank
+group in New Delhi, Nupur joined IAL, an entertainment company where
+she currently advises the Board on Strategy and Finance. Her journey from
+New York’s Wall Street to India’s Main Street has empowered her with a
+multinational perspective on building and conducting businesses with a
+connected worldview.
 
+Through her work with Sasakawa India Leprosy Foundation, American
+India Foundation and Sakhi she has tried to measure her contribution in
+meaningfully impacted lives rather than statistics on a balance sheet. Her
+role as an investor in social impact firms, advisor to start-ups, mentor to
+young professionals and guide to university students has provided a
+renewed sense of purpose. She has also been invited by faculty of FMS
+and IILM to be a guest speaker.
 
-Prior to joining IAL, Nupur consulted with International Finance Corporation (IFC) in their
-Infrastructure Investment team. She was also head of the Structured Credit Syndicate and
-Secondary Trading desk for Asia Ex Japan at Nomura in Hong Kong. Her primary responsibility
-was to deliver customized financial solutions to investors in 7 unique Asian markets. In this role,
-she raised over $5 billion in 10 internationally syndicated transactions. At Lehman Brothers in
-New York, she helped place the bank’s first managed synthetic CDO and worked intimately with
-her global counterparts, to drive the American and European structured credit business. Earlier
-she worked for Merrill Lynch and started her career at PwC.
-
-
-Through her work with Sasakawa India Leprosy Foundation, American India Foundation and
-Sakhi she has tried to measure her contribution in meaningfully impacted lives rather than just
-statistics on a balance sheet. Her role as an advisor to boards, investor in start-ups and mentor
-to young professionals has provided a renewed sense of purpose. Nupur is currently serving as
-Alumni Co Chair of her Harvard class and Conference Co Lead of The Future of Work –
-Accelerating Gender Parity conference hosted by the HBS Club of India and HBSI.
+Her passion around mental health is extremely personal. Daughter to one
+of India’s most formidable mental health experts, Dr. Rajni Arya, she has
+grown up in an environment surrounded by high caliber professionals of the
+field. Having seen the benefits in clients and in her own personal life, she is
+committed to offering the same high quality, holistic mental health help to
+others.

@@ -128,8 +128,8 @@ footer{text-align: center;}
 
       color: #000;
       }
-p{
-  font-size: .8em;
+p, blockquote{
+  font-size: .7em;
   text-align: justify;
 }
 footer {
@@ -257,11 +257,11 @@ ul.menu li:hover{  opacity: 1;  transition: opacity 1s ease 0;}
     color: #fff;
     background-color: transparent;
     font-variant: small-caps;
-    font-family: Sigmar One;
-    font-weight: 100;
+    font-family: Lato;
+    /*font-weight: 100;*/
 }
 h2{
-  font-family: Sigmar One;
+  font-family: Josefin sans;
   font-weight:100 !important;
   color: #519bce;
 }
