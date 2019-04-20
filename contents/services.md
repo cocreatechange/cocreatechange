@@ -17,18 +17,18 @@ at home or at work. 
 Some of our core areas of work and intervention in counselling and therapy
 are:
 
-  - Behavioural Addiction
-  - Substance Use disorder
-  - Behavioral and Emotional Disorders 
-  - Conduct Disorder
-  - Oppostional Defiant Disorder (ODD)
-  - Obsessive-Compulsive Disorder (OCD)
-  - ADHD
-  - Eating Disorders
+  - Stress
   - Anxiety
   - Depression
-  - Stress
+  - Loneliness
   - Suicide
+  - Behavioural Addiction
+  - Conduct Disorder
+  - Substance Use disorder
+  - Eating Disorders
+  - ADHD
+  - Oppostional Defiant Disorder (ODD)
+  - Obsessive-Compulsive Disorder (OCD)
 
 ##### 2. Development Services
 
@@ -100,6 +100,23 @@ We assess for a wide variety of concerns as follows:-
 
 
 ## Adolescents
+
+Some of our core areas of work and intervention in counselling and therapy
+are:
+
+  - Stress
+  - Anxiety
+  - Depression
+  - Loneliness
+  - Suicide
+  - Behavioural Addiction
+  - Conduct Disorder
+  - Substance Use disorder
+  - Eating Disorders
+  - ADHD
+  - Oppostional Defiant Disorder (ODD)
+  - Obsessive-Compulsive Disorder (OCD)
+
 **STAR** (Services For Teens At Risk Program)  This combines clinical and outreach services to help prevent risk behaviours in adolescents. It consists of  an internationally observed protocol for adolescents at risk of substance use disorder, suicide prevention etc.  It comprises of building awareness among vulnerable groups through targeted intervention, education of professionals, and the treatment of at-risk youth and their families.
  
 The program focuses on the causality of adolescent crisis’, and has helped to identify the role of academic pressure, loneliness, inadequacy, substance abuse, and mood disorders as risk factors for turbulence among the youth. Consequently, we have developed national practice guidelines for the treatment of and management of adolescent stress, anxiety, depression and suicidal behaviour.
@@ -211,18 +228,18 @@ staff.
 
 Trainings and workshops are conducted on the following problem areas:​
 
-- Burnout​
-- Work life balance​
+- Stress
+- Anxiety
+- Depression
 - Loneliness​
 - Suicide​
+- Burnout​
+- Work life balance​
 - Anger​
 - Anxiety/depression/stress​
 - Drugs​
 - Relationship problems​
 - Communication Skills
-- Stress
-- Anxiety
-- Depression
 
 
 

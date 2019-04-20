@@ -31,7 +31,9 @@ a{color:inherit; transition:color 1s ease 0s;}
 /*********** ELEMENTS **************/
 
 
-
+section.content ul, ol {
+    font-size: .7em;
+}
 
 p {
   margin-bottom: 1.52em;
@@ -206,7 +208,7 @@ ul.menu {
     padding: 0;
     list-style: none;
     display: flex;
-    width: 750px;
+    width: 1000px;
     align-items: center;
     z-index: 30;
     font-family: Josefin Sans;

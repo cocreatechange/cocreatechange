@@ -13,7 +13,7 @@ html(lang='en')
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-71505892-1', 'auto');
+        ga('create', 'UA-136923307-1', 'auto');
         ga('send', 'pageview');
       title
         block title
@@ -36,15 +36,16 @@ html(lang='en')
           li
             a(href='/') Home
           li 
-            a(href = locals.url+'/about.html') About
+            a(href='about.html') About
+            ul.sub-menu
+              li
+                a(href = locals.url+'/about.html') About Us
+              li
+                a(href = locals.url + '/about.html#partners')  Partners
           li   
             a(href = locals.url + '/services.html')  Services
-          li Partners
-            ul.sub-menu
-              li 
-                a(href = locals.url + '/beneficiary.html') Beneficiaries
-              li
-                a(href = locals.url + '/beneficiary.html#partners')  Partners
+          li 
+            a(href = locals.url + '/beneficiary.html') Beneficiaries
           li  
             a(href = locals.url + '/events.html')  Events
             ul.sub-menu

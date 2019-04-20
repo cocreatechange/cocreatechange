@@ -2,35 +2,42 @@ extends layout
 block header
 block beforeContent
   
-  div.h1
-    h1 Co-create Change
-    h3
-      | Nurturing the 
-      span.green.big me
-      |  in 
-      span.green m
-      | ill
-      span.green e
-      | nnials
+  div.curtain
+    div.h1
+      img.logo-big(src="#{locals.logobig}")
+      h1 Co-create Change
+
   p.values
 
-    | counsellors | psychologist | psychotherapists
-    | substance use disorder experts
+    | counsellors | psychologists | psychotherapists
     | trainers | consultants
     br
-    span Facilitating Crisis Intervention | Problem Management | Opportunity Development
+    span.ww addressing
+    br
+    span Stress | Anxiety | Depression | Suicide | Loneliness
+    br
+    span Cognitive & Behavioural Distortions & Disorders
+    
   
 
   section.container
     h2 Who we are
     p
-      | We are a team of credentialed (and practicing) mental health professionals trained in India, the United States and UK. Our core competency lies in empowering individuals and institutions through our counselling, training and consultancy.
-    p  
-      | Our approach to therapy is client centred, empathetic and non-judgmental. We follow a problem management approach, wherein we help individuals, going through a crisis, find a solution that can help them either overcome or manage their problems better.
-    p  
-      | Our outreach programs are collaborative as we engage with all those who are important in the lives of children and adolescents, namely, the parents,schools, colleges and the community.
+      | We are  a team of credentialed (and practicing) mental health professionals trained in India and the United States. Our core competency lies in empowering individuals and institutions through our training and consultancy.
+    p
+      | Our outreach cuts across age, disorders, disabilities and types of problems. Our core thrust area is enhancing the challenges faced by millennials (children, adolescents and youth). Our approach is collaborative wherein we work with all those who are important in the lives of children and adolescents, namely, the parents, schools, colleges and the community.
+    p
+      | Our approach to therapy is client centered, empathetic and non-judgmental. We follow a solution focused approach, wherein we help individuals, going through a crisis, to be able to overcome/manage their problems better.
 
 block bottom_scripts
   link(rel='stylesheet', href=locals.url+contents.css['custom.css'].url)
-
+  script.
+    window.onscroll = function(){
+      if (window.scrollY > 20){
+          $('.curtain').not('.push').animate({'top':'-120%'}).addClass('push')
+        }
+        else  
+          $('.curtain.push').animate({'top':'20%'}).removeClass('push')
+      }
+    
 
