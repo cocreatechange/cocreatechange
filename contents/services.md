@@ -121,7 +121,7 @@ are:
  
 The program focuses on the causality of adolescent crisis’, and has helped to identify the role of academic pressure, loneliness, inadequacy, substance abuse, and mood disorders as risk factors for turbulence among the youth. Consequently, we have developed national practice guidelines for the treatment of and management of adolescent stress, anxiety, depression and suicidal behaviour.
  
-**ASAP** (Adolescent Suicide Awareness Program) – Through this our mission is to offer state-of-the-art (psychological) emergency responsive care for children and adolescents with depression or anxiety, or who are at risk for suicidal behaviour.
+**ASAP** (Adolescent Suicide Awareness Program) Through this our mission is to offer state-of-the-art (psychological) emergency responsive care for children and adolescents with depression or anxiety, or who are at risk for suicidal behaviour.
  
 ## Parents
 
@@ -203,7 +203,7 @@ Statistics today reveal that only a small fraction of help sought on any given d
 
  
 
-We at Co-create Change see ourselves as enablers striving to institutionalize this conviction through our vision to train people to be able to help others and themselves deal with the distressing challenges of life. As a first step towards actualizing this vision our mission is to build Counseling skills in Graduate and Post graduate students of Psychology and Counseling who have studied the curriculum but not had the opportunity to undergo skill training under the guided supervision of experts. Through bridging this gap between knowledge and application we envision these students becoming our ambassadors in Co-create Change.
+We at CoCH see ourselves as enablers striving to institutionalize this conviction through our vision to train people to be able to help others and themselves deal with the distressing challenges of life. As a first step towards actualizing this vision our mission is to build Counseling skills in Graduate and Post graduate students of Psychology and Counseling who have studied the curriculum but not had the opportunity to undergo skill training under the guided supervision of experts. Through bridging this gap between knowledge and application we envision these students becoming our ambassadors in Co-create Change.
 
  
 
@@ -211,18 +211,12 @@ We at Co-create Change see ourselves as enablers striving to institutionalize th
 Thereafter, as a part of our training vision, we aspire to square the circle by building counseling, mentoring and problem solving skills in each and every individual in society.
 
 ## Institutional
-Counselling helps people identify issues, difficulties and problems caused by
-thoughts, feelings and emotions and encourages them to respond and make
-progress towards resolution. Whilst a little bit of stress provides workers with
-the motivation to increase productivity and efficiency, too much stress can be
-counterproductive.
-Providing psychological therapy for stressed employees can have many
-beneficial effects. Counselling in the workplace can help reduce symptoms of
-anxiety and depression, improve mental health, lower levels of sickness and
-increase job satisfaction and commitment. It enhances productivity and
-reduces attrition too.
-Along with providing counselling in the workplace we also conduct
-“*Counselling Skills Training*” for Human Resource managers, supervisors and
+Counseling helps people identify issues, difficulties and problems caused by thoughts, feelings and emotions and encourages them to respond and make
+progress towards resolution. Whilst a little bit of stress provides workers with the motivation to increase productivity and efficiency, too much stress can be counterproductive.
+Providing psychological therapy for stressed employees can have many beneficial effects. Counselling in the workplace can help reduce symptoms of
+anxiety and depression, improve mental health, lower levels of sickness and increase job satisfaction and commitment. It enhances productivity and
+reduces attrition too. Along with providing counselling in the workplace we also conduct
+“*Counseling Skills Training*” for Human Resource managers, supervisors and
 staff.
 
 
