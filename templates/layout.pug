@@ -22,13 +22,14 @@ html(lang='en')
 			link(rel="icon" href=locals.url+"/favico.ico" sizes="16x16")
 			link(rel="icon" href=locals.url+"/favico32.ico" sizes="32x32")
 			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+			link(href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap", rel="stylesheet")
 			link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
 			link(rel='stylesheet', href=locals.url+contents.css['main.css'].url)
 			block top_scripts
 	body(class=bodyclass)
 		header
 			div.menu-bar
-				a.logo(href = '/', style="background-image: url(#{locals.logo})")
+				a.logo(href = '/', style='background-image: url(' + locals.logo + ')')
 				div.menu-text MENU
 				ul.menu
 					li
@@ -67,7 +68,7 @@ html(lang='en')
 					
 		footer
 			div.container
-				a.logo(href = '/', style="background-image: url(#{locals.logo})")
+				a.logo(href = '/', style='background-image: url(' + locals.logo + ')')
 				div.footer-text
 					| We are a team of credentialed (and practicing) mental health professionals trained in India and the United States. Our core competency lies in empowering individuals and institutions through our training and consultancy.
 			div.venue

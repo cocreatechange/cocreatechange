@@ -69,6 +69,7 @@ The goals of such assessments are to :
 We assess for a wide variety of concerns as follows:-
 
 <p class='accordian'>Instruments for assessment</p>
+  
   - Intelligence Scale for Children
   - Individual Achievement Test
   - Neuropsychological Assessment for Children
@@ -83,6 +84,7 @@ We assess for a wide variety of concerns as follows:-
 
 
 <p class="accordian">OT assessment</p>
+  
   - Interview with parent.​
   - Sensory Integration and Praxis Test
   - Sensory Processing Checklist questionnaire​
@@ -92,6 +94,7 @@ We assess for a wide variety of concerns as follows:-
   - Observations during unstructured play.​
 
 <p class="accordian">Career counselling</p>
+  
   - Interest inventory
   - Personality Profile
   - Aptitude tests 
