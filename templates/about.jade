@@ -14,9 +14,9 @@ block content
    
 block aftercontent   
    - var articles =  env.helpers.getProfilesArticles(contents)        
-   section#partners.profiles
+   section#team.profiles
       div.h1-container
-          h2.partners.container Partners
+          h2.partners.container Team
       div.profiles
         each a  in articles
           article.card(data-name = a.metadata.name)
@@ -35,14 +35,14 @@ block aftercontent
 
 block bottom_scripts
   script.
-      $('#partners .card').click(function(){
+      $('#team .card').click(function(){
         $(this).siblings().removeClass('active')
         $(this).addClass('active')
         $('.details .profile').removeClass('active')
         $('.details .profile[data-name="'+ $(this).data('name')+'"]').addClass('active')
       })
-      $('#partners .card').first().trigger('click')
-      $('#partners .card .socials a.icon').click(function(event){
+      $('#team .card').first().trigger('click')
+      $('#team .card .socials a.icon').click(function(event){
         event.preventDefault();
         event.stopPropagation();
         window.open(this.href);
@@ -142,8 +142,8 @@ block bottom_style
         border-width: 0 1px;
     }
      section .details .profile.active{display: block;}
-     section#partners {background-color: #e7e7f3; }
+     section#team {background-color: #e7e7f3; }
     
-     #partners .details li{ margin:0;font-size:.7em;}
-     #partners .details ul{ margin-bottom:15px;}
+     #team .details li{ margin:0;font-size:.7em;}
+     #team .details ul{ margin-bottom:15px;}
 
