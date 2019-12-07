@@ -3,6 +3,7 @@ title: Beneficiaries
 date: 2013-04-01
 template: partners.jade
 file: beneficiary.html
+name: beneficiary
 ---
 
 

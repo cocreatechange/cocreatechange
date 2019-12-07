@@ -1,0 +1,56 @@
+
+extends layout
+
+block append vars
+  - bodyclass = 'blog'
+
+block prepend title
+  | #{ page.title + ' - '}
+
+block content
+  include author
+  - lllarticles = env.helpers.getArticles(contents)
+  
+  div.articles
+
+    each article in lllarticles
+      article(onclick="location.href='"+article.url+"'")
+        div.article-header
+          h2  #{article.title}
+          p.date
+            span= moment.utc(article.date).format('DD. MMMM YYYY')
+        div.content
+          if article.intro.length > 0
+            != typogr(article.intro).typogrify()
+
+block bottom_scripts
+  style.
+    .articles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+    article {
+      width:200px;
+      box-shadow: 0 0 1px #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-decoration:none;
+      cursor:pointer;
+    }
+    article:hover{
+      box-shadow: 0 0 5px #ccc;
+    }
+    article span{
+      font-size: 11px;
+    }
+    article .content{
+      max-height: 200px;
+      overflow:hidden;
+    }
+    article h2{
+      color: #519bce;
+      max-height: 41px;
+      font-size: 20px;
+    }

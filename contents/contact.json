@@ -1,6 +1,7 @@
 
 {
 	"title": "contact us",
+	"name":"contact",
 	"template": "contact.jade",
 	"filename": "contact.html",
 	"email": "directorsoffice@cocreatechange.in",

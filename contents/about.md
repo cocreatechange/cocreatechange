@@ -2,6 +2,7 @@
 title: About Us
 date: 2013-04-01
 template: about.jade
+name: about
 file: about
 featured-img: img/aboutus-img.jpg
 ---

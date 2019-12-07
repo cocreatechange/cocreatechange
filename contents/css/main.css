@@ -235,7 +235,7 @@ ul.sub-menu {
     color: black;
 }
 ul.sub-menu li{text-align: left !important;}
-
+.menu li.active{color:red;}
 ul.menu li{  font-variant: small-caps;opacity: .5; position: relative; flex:1; text-align: center;border-bottom:  1px solid white;}
 ul.menu li:hover{  opacity: 1;  transition: opacity 1s ease 0;}
 .featured-image {

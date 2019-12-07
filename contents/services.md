@@ -3,6 +3,7 @@ title: Services
 date: 2018-31-12
 template: services.jade
 filename: services.html
+name: services
 ---
 
 ## Children
