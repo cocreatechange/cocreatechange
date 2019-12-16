@@ -8,12 +8,10 @@ block prepend title
   | #{ page.title + ' - '}
 
 
-  include author
-  p.author
-    | #{ 'Written by ' }
-    | mixin author(page.metadata.author)
 
 block content
+  p By #{page.metadata.author}
+  br
   article.article
     section.content!= typogr(page.html).typogrify()
 

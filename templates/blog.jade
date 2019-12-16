@@ -8,7 +8,6 @@ block prepend title
   | #{ page.title + ' - '}
 
 block content
-  include author
   - lllarticles = env.helpers.getArticles(contents)
   
   div.articles
@@ -18,7 +17,10 @@ block content
         div.article-header
           h2  #{article.title}
           p.date
+            span #{article.metadata.author}
+            br
             span= moment.utc(article.date).format('DD. MMMM YYYY')
+            
         div.content
           if article.intro.length > 0
             != typogr(article.intro).typogrify()
