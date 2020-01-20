@@ -11,6 +11,8 @@ block prepend title
 
 block content
   p By #{page.metadata.author}
+  if page.metadata.banner
+    img.banner(src="./"+page.metadata.banner)
   br
   article.article
     section.content!= typogr(page.html).typogrify()
@@ -24,3 +26,9 @@ block bottom_scripts
       max-width: 80%;
        margin: auto;
     } 
+    img.banner{
+      margin: 0 auto;
+      max-width:100%;
+      display: block;
+      margin-top: -20px;
+    }
